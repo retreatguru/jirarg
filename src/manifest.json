@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "JiraRG",
+    "description": "Augment Jira for RetreatGuru",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["https://retreatguru.atlassian.net/secure/RapidBoard.jspa?*"],
+            "js": ["jquery.js", "jira.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
