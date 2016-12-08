@@ -18,6 +18,6 @@ $(function() {
     console.log(columns);
     $.each(columns, function(index, total) {
         var header = $('.ghx-column-headers').find('.ghx-column').get(index)
-        $(header).find('.ghx-limits').append($('<span>').html("&nbsp; (" + total + " points)"));
+        $(header).find('.ghx-limits').append($('<span>').html("&nbsp; " + total + " points"));
     })
 });
