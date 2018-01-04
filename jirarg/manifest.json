@@ -3,6 +3,7 @@
     "name": "JiraRG",
     "description": "Augment Jira for RetreatGuru",
     "version": "1.0",
+    "update_url": "http://www.example.com/update.xml",
     "content_scripts": [
         {
             "matches": ["https://retreatguru.atlassian.net/secure/RapidBoard.jspa?*"],
