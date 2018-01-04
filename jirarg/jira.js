@@ -19,7 +19,7 @@
         $.each(columns, function(index, total) {
             var header = $('.ghx-column-headers').find('.ghx-column').get(index)
             $(header).find('.ghx-limits .total-story-points').remove();
-            $(header).find('.ghx-limits').append($('<span class="total-story-points">').html("&nbsp; " + total + " points"));
+            $(header).find('.ghx-limits').append($('<span class="ghx-constraint ghx-busted total-story-points">').html("&nbsp; " + total + " Points"));
         })
         $('#ghx-content-main').on('DOMSubtreeModified', calculateStoryPointsTotal);
     };
